@@ -1,4 +1,4 @@
-FROM arm32v7/golang:alpine AS builder
+FROM golang:alpine AS builder
 ADD app.go /go/src/hello/app.go
 WORKDIR /go/src/hello
 RUN apk add --no-cache gcc libc-dev
